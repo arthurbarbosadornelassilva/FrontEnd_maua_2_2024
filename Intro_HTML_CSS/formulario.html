@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Formulario </title>
+</head>
+<body>
+    <header>
+        <h1> Página Formulário </h1>
+    </header>
+    <form>
+        <p>
+            <!-- forma 1 para label -->
+            <label for="entrada_1"> entrada_1: </label>
+            <input id="entrada_1" type="text">
+            
+            <!-- forma 2 para label -->
+            <label>
+                entrada_2:
+                <input id="entrada_2" type="text">
+            </label>
+        </p>
+        <p>
+            <label>
+                entrada_email:
+                <!-- precisará de um @ ao escrever o fomulário -->
+                <input id="entrada_email" type="email">
+            </label>
+        </p>
+        <p>
+            <label>
+                entrada_cor:
+                <input id="entrada_cor" type="color">
+            </label>
+        </p>
+        <p>
+            <label>
+                entrada_arquivo:
+                <input id="entrada_arquivo" type="file">
+            </label>
+        </p>
+        <p>
+            <label>
+                entrada_comentario:
+                <textarea id="entrada_comentario" type="file"></textarea>
+            </label>
+        </p>
+        <label>
+            <input id="enviar" type="submit">
+        </label>
+
+    </form>
+</body>
+</html>
