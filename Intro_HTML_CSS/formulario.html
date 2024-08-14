@@ -43,8 +43,30 @@
         <p>
             <label>
                 entrada_comentario:
+                <!-- textarea no lugar do input -->
                 <textarea id="entrada_comentario" type="file"></textarea>
             </label>
+        </p>
+        <p>
+            <label>
+                entrada_escolha:
+                <!-- select no lugar do input -->
+                <select id="estados">
+                    <option> opção_1 </option>
+                    <option> opção_2 </option>
+                </select>
+            </label>
+        </p>
+        <p>
+            <input type="radio" name="opção"> <label for="#"> opção_1 </label>
+            <input type="radio" name="opção"> <label for="#"> opção_2 </label>
+        </p>
+        <p>
+            <fieldset>
+                <legend>Selecione uma opção:</legend>
+                <input type="radio" name="opção"> <label for="#"> opção_1 </label>
+                <input type="radio" name="opção"> <label for="#"> opção_2 </label>
+            </fieldset>
         </p>
         <label>
             <input id="enviar" type="submit">
