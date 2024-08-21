@@ -1,0 +1,11 @@
+.cabecalho_topo {
+    display: flex;
+    padding: 5px;
+    background-color: aquamarine;
+}
+p#navegacao_menu {
+    background-color: antiquewhite;
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+}
