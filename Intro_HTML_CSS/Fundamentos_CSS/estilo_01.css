@@ -9,3 +9,6 @@ p#navegacao_menu {
     flex-flow: row wrap;
     width: 100%;
 }
+a#link_contato_menu {
+    margin-left: 100%;
+}
