@@ -1,22 +1,51 @@
+</html>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Página Estilizada </title>
-    <link rel="stylesheet" href="estilo_00.css">
+    <meta charset="utf-8">
+    <title>Mais seletores</title>
+    <!-- vamos especificar as regras CSS aqui, para simplificar (CSS Interno)-->
+    <style>
+        article > p {
+            padding: 10px;
+            background-color: aqua;
+        }
+        article p {
+            border: solid 1px red;
+        }
+        #principal p.promocao-nova {
+            background-color: antiquewhite;
+            border: solid 1px black;
+        }
+        #propaganda{
+            text-align: center;
+        }
+    </style>
 </head>
+
 <body>
-    <h1 id="titulo_pagina">
-        Página Estilizada - Página de Curso
-    </h1>
-    <!-- É possível estilizar a página diretamente na tag html, como em style. Essa prática é conhecida como CSS Inline (que não é reutilizável e pode atrapalhar a manutenção do código). Ela sobrepõe a estilização  -->
-    <p style="color: red">
-        "Oferecemos cursos preparatórios nas mais diverças áreas"
-    </p>
-    <p>
-        <!-- O html também apresenta algumas tags de estilização, com 'strong' -->
-        Venha conhecer nossos <strong> cursos mais populares </strong>
-    </p>
+    <main id="principal">
+        <h1 id="titulo">Portal de cursos</h1>
+        <p id="descricao">Possuímos cursos nas mais diversas áreas</p>
+        <p class="promocao-nova">Venha conversar conosco e conhecer
+            nossas ofertas de <strong>bolsas de estudos</strong>.</p>
+        <p>Cursos:</p>
+        <article>
+            <p class="novo-curso">Medicina</p>
+            <p class="curso">Engenharia de Computação</p>
+            <p class="curso">Farmácia</p>
+            <section id="propaganda">
+                <strong>
+                    Nossos coordenadores estão te esperando!
+                </strong>
+            </section>
+        </article>
+        <p id="contato" class="final-pagina">Entre em contato:
+            11223344</p>
+        <p id="rodape" class="final-pagina">Todos os direitos
+            reservados&copy; </p>
+    </main>
 </body>
+
 </html>
