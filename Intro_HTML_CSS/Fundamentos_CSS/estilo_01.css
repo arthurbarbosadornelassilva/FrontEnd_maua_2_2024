@@ -1,14 +1,30 @@
-.cabecalho_topo {
-    display: flex;
-    padding: 5px;
-    background-color: aquamarine;
+/* estiliza a tag a que se refere */
+* {
+    box-sizing: content-box;
+    background-color: lightseagreen;
 }
-p#navegacao_menu {
-    background-color: antiquewhite;
-    display: flex;
-    flex-flow: row wrap;
-    width: 100%;
+
+main {
+    border: solid 2px black;
 }
-a#link_contato_menu {
-    margin-left: 100%;
+
+section {
+    border: solid 2px black;
+    padding: 1px;
+    background-color: aqua;
+}
+p {
+    font-family: 'Courier New', Courier, monospace;
+    color: red;
+}
+/* (.) --> refere-se à classe, tornando a estilização da section mais específica */
+.paragrafo {
+    border: solid 2px black;
+    padding: 1px;
+    background-color: wheat;
+}
+/* (#) --> refere-se o id, ficando mais específico ainda */
+#Exemplo {
+    color: green;
+    background-color: lightblue;
 }
