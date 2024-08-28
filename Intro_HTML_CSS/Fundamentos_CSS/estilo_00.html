@@ -7,24 +7,36 @@
     <title>Mais seletores</title>
     <!-- vamos especificar as regras CSS aqui, para simplificar (CSS Interno)-->
     <style>
-        article > p {
+        .new-amsterdam-regular {
+            font-family: "New Amsterdam", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        article>p {
             padding: 10px;
             background-color: aqua;
         }
+
         article p {
             border: solid 1px red;
         }
+
         #principal p.promocao-nova {
             background-color: antiquewhite;
             border: solid 1px black;
         }
-        #propaganda{
+
+        #propaganda {
             text-align: center;
         }
     </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body class="new-amsterdam-regular">
     <main id="principal">
         <h1 id="titulo">Portal de cursos</h1>
         <p id="descricao">Possuímos cursos nas mais diversas áreas</p>
