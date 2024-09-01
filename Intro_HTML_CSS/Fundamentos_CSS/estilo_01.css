@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap');
 /* estiliza a tag a que se refere */
 * {
     box-sizing: content-box;
@@ -14,10 +15,15 @@ section {
     background-color: aqua;
 }
 p {
-    font-family: 'Courier New', Courier, monospace;
     color: red;
 }
 /* (.) --> refere-se à classe, tornando a estilização da section mais específica */
+.new-amsterdam-regular {
+    font-family: "New Amsterdam", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }  
+
 .paragrafo {
     border: solid 2px black;
     padding: 1px;
@@ -27,4 +33,5 @@ p {
 #Exemplo {
     color: green;
     background-color: lightblue;
+    text-decoration: underline;
 }
