@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Margem </title>
+    <style>
+        .primeira, .segunda {
+            background-color: aquamarine;
+            border: solid black 1px;
+            padding: 10px;
+            width: 300px;
+        }
+        .terceira {
+            background-color: aquamarine;
+            border: solid black 1px;
+            padding: 10px;
+            width: 300px;
+            /* se colocarmos uma margem que se contradiga em relaçao às outras, o que acontece é que os elementos podem vir a se sobrepor */
+            margin-top: -80px;
+        }
+    </style>
+</head>
+<body>
+    <p class="primeira">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis dolorum amet autem odio vero minus itaque? Ducimus enim impedit magnam itaque minima pariatur. Sint esse non ea velit ad delectus!</p>
+    <p class="segunda">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis dolorum amet autem odio vero minus itaque? Ducimus enim impedit magnam itaque minima pariatur. Sint esse non ea velit ad delectus!</p>
+    <p class="terceira">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus veritatis asperiores ipsa atque ab, quam maiores, iste ullam laboriosam, hic quas omnis voluptatibus sequi cumque dignissimos! Cumque quaerat natus minima.</p>
+</body>
+</html>
