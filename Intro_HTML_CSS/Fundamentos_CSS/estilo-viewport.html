@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Viewport + Layouts Fluidos </title>
+    <style>
+        body {
+            margin: 0;
+        }
+        h1 {
+            margin: 0;
+        }
+        main {
+            border: 2px solid blue;
+            /* quando usamos a margem 0 auto, o elemento ficará no centro da tela  */
+            margin: 0 auto;
+            width: 100%;
+            text-align: center;
+        }
+        /* .principal {
+            width: 400px;
+            height: 400px;
+            background-color: lightblue;
+        } */
+        .ciencia,
+        .sistemas,
+        .inteligencia {
+            border: solid 2px black;
+        }
+        @media(min-width: 900px) {
+            .ciencia,
+            .sistemas,
+            .inteligencia {
+                display: inline-block;
+                background-color: aquamarine;
+                width: 20%;
+            }
+        }
+        @media(min-width: 500px) {
+            .ciencia,
+            .sistemas,
+            .inteligencia {
+                background-color: aquamarine;
+            }
+        }
+        @media(min-width: 750px) {
+            body {
+                background-color: blueviolet;
+            }
+            .ciencia,
+            .sistemas,
+            .inteligencia {
+                background-color: beige;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main class="principal">
+        <!-- <h1> Estudos sobre viewport</h1>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi omnis quo veritatis nemo blanditiis ad impedit inventore, vero, facere accusantium rerum fugit dicta porro expedita cupiditate et eveniet? Obcaecati, dolorem!</p> -->
+        <article class="ciencia"> Ciência da Computação </article>
+        <article class="sistemas"> Sistemas de Informação </article>
+        <article class="inteligencia"> IA </article>
+    </main>
+        <script>
+        document.write("<p>" + window.innerWidth + " x " + window.innerHeight + "</p>");
+    </script>
+</body>
+</html>

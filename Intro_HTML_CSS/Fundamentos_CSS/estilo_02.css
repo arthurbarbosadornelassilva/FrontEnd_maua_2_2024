@@ -1,3 +1,13 @@
+article {
+    /* box-sizing: content-box; */
+    box-sizing: border-box;
+    /* content-box: cria uma caixa no elemento html em que o padding acrescentado ocupa mais espaço da tela */
+    /* border-box: cria uma caixa no elemento html em que os dados internos tem que se adaptar ao espaço delimitado da caixa. Caso haja padding, o conteúdo diminui dentro da caixa */
+    width: 600px;
+    height: 650px;
+    padding: 20px;
+    border: solid 5px;
+}
 p {
 background-color: #CCC;
 }
@@ -5,7 +15,7 @@ a {
 background-color: rgb(202, 184, 231);
 border: dotted;
 border-width: 5px;
-border-radius: 10%;
+border-radius: 10px;
 border-color: red;
 }
 footer{
@@ -28,4 +38,17 @@ button:hover{
     display: inline-block;
     width: auto;
     height: 150px;
+}
+.lorem1 {
+    width: 250px;
+    height: auto;
+    padding-inline: 20px;
+}
+.lorem2 {
+    width: 250px;
+    height: auto;
+    padding-inline: 20px;
+    border: solid 5px black;
+    /* quando a margem fica automática, o elemento irá centralizar no seu espaço e a margem ocupará a porção lateral inteira da tela */
+    margin: auto ;
 }
