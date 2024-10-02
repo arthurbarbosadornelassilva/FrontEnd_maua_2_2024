@@ -5,7 +5,7 @@ const app = express()
 
 app.use (express.json())
 
-//get http://localhost:3000/oi
+//get http://localhost:3000/filmes
 app.get('/oi', (req, res) => {res.send(filmes)})
 
 let filmes = [
