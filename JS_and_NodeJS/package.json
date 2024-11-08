@@ -1,7 +1,6 @@
 {
   "name": "js_and_nodejs",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -14,6 +13,8 @@
     "nodemon": "^3.1.7"
   },
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.21.0"
-  }
+  },
+  "description": ""
 }
