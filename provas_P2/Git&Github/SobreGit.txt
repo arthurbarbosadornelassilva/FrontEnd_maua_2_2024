@@ -9,9 +9,45 @@ Git: sistema de versionamento para o desenvolvimento de software
     
 Ordem do material pra criar um repo do git
 
+    - *criar uma pasta nova na area de trabalho e acessá-la através no terminal da máquina*
     - git init
     - git config --local user.name 'Arthur Silva'
     - git config --local user.email xarthsilvax@gmail.com
     - git config --global core.editor "code --wait"
     - git config --global init.defaultBranch main
-    - git config --list
+    - git config --list (visualizar as configurações realizadas)
+    - git status ('-s' para mensagens de status mais curtas)
+    - git add <arquivo> ('*' para acrescentar todos os arquivos novos ou modificados)
+    - git commit
+    - git log ('-p' para visualizar a lista de commits + código contido (patch) em cada commit)
+    - *altere o arquivo staged e crie uma nova commit*
+    - git diff (verificar o conteúdo modificado do arquivo)
+    - git tag -a v1.0.0 -m “operação de somar implementada e testada” (No Git, as tags podem ser leves ou anotadas. Uma tag leve é apenas um ponteiro temporário para algum commit. Uma tag anotada serve para destacar um commit como especial e ela inclui o nome do autor, uma mensagem, data etc. Leia mais no Link https://git-scm.com/book/en/v2/Git-Basics-Tagging)
+    - git tag --list (visualizar as tags criadas)
+    - git show <tag version> (ver a mensagem da tag)
+
+Acesso ao repositório remoto do git com token de Acesso
+    - *crie um repositório e um token de acesso pessoal em seu perfil*
+    - git remote add origin <link do token>
+    - git remote (verificar o nome do remote)
+    - git branch (verificar o nome da branch)
+    - git push origin main
+    - git push origin --tags (você também pode enviar todas as tags de uma vez)
+    - git remote remove origin (você pode remover o endereço de seu remote, incluindo o token)
+
+Estado de um arquivo Cada arquivo sob controle de versão tem o seu “estado”. Para entender os comandos que utilizaremos, precisamos entendê-los:
+
+VEJA:
+D:\MAUÁ\SEMESTRE_02\DesenvolvimentoFrontEnd\FrontEnd_maua_2_2024\provas_P2\Git&Github\1-1.png
+
+- Untracked: Arquivos neste estado se encontram no diretório de trabalho porém não estão
+sob controle de versão.
+- Tracked: Arquivos neste estado estão sob controle de versão. Observe que há três
+sub-estados deste.
+- Unmodified: A versão presente no diretório de trabalho é igual à última que foi tornada
+permanente.
+- Modified: A versão presente no diretório de trabalho está editada em relação à última que
+foi tornada permanente.
+- Staged: Arquivos neste estado estão prontos para participar do próximo commit. Somente
+arquivos neste estado são tornados permanentes quando um comando commit é
+executado
