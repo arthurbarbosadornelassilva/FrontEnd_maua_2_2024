@@ -1,0 +1,17 @@
+Resumo do Material da Apostila 7 de teoria de Desenvolvimento
+
+Git: sistema de versionamento para o desenvolvimento de software
+
+    - Repo: pasta onde armazenamos os dados do sistema que estamos desenvolvendo. Um repositório apresenta uma pasta oculta .git que armazena os dados das versões que são acrescentadas ou editadas
+    - Commit: é a ação de salvar as alterações feitas, tornando-as permanentes
+    - Branch: são raízes do repositório. Sempre existirá uma raíz principal e outras paralelas em que podemos criar versões diferentes do sistema sem alterar a principal. Caso queiramos mesclar uma versão paralela à branch principal realizamos uma mesclagem, ou 'merge'
+    - Ponteiro HEAD: faz referência à versão atual em desenvolvimento na branch
+    
+Ordem do material pra criar um repo do git
+
+    - git init
+    - git config --local user.name 'Arthur Silva'
+    - git config --local user.email xarthsilvax@gmail.com
+    - git config --global core.editor "code --wait"
+    - git config --global init.defaultBranch main
+    - git config --list
